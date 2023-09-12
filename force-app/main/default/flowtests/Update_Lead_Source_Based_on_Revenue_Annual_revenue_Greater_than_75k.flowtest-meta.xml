@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowTest xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowApiName>Update_Lead_Source_Based_on_Revenue</flowApiName>
+    <label>Annual revenue Greater than 75k</label>
+    <testPoints>
+        <elementApiName>Start</elementApiName>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordInitial</type>
+            <value>
+                <sobjectValue>{&quot;AnnualRevenue&quot;:10096887,&quot;CleanStatus&quot;:&quot;Pending&quot;,&quot;Company&quot;:&quot;F5 Networks&quot;,&quot;Description&quot;:&quot;Testign the Lead Creation through API&quot;,&quot;Email&quot;:&quot;yogeeswar99@gmail.com&quot;,&quot;FirstName&quot;:&quot;Yogeeswar&quot;,&quot;Industry&quot;:&quot;Agriculture&quot;,&quot;IsUnreadByOwner&quot;:false,&quot;LastName&quot;:&quot;Madupuri&quot;,&quot;LeadSource&quot;:&quot;Phone Inquiry&quot;,&quot;OwnerId&quot;:&quot;0050o00000VyXBUAA3&quot;,&quot;Phone&quot;:&quot;473724327&quot;,&quot;Status&quot;:&quot;Open - Not Contacted&quot;,&quot;Title&quot;:&quot;Software Development Engineer&quot;}</sobjectValue>
+            </value>
+        </parameters>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordUpdated</type>
+            <value>
+                <sobjectValue>{&quot;AnnualRevenue&quot;:&quot;10096889&quot;,&quot;CleanStatus&quot;:&quot;Pending&quot;,&quot;Company&quot;:&quot;F5 Networks&quot;,&quot;Description&quot;:&quot;Testign the Lead Creation through API&quot;,&quot;Email&quot;:&quot;yogeeswar99@gmail.com&quot;,&quot;FirstName&quot;:&quot;Yogeeswar&quot;,&quot;Industry&quot;:&quot;Agriculture&quot;,&quot;IsUnreadByOwner&quot;:false,&quot;LastName&quot;:&quot;Madupuri&quot;,&quot;LeadSource&quot;:&quot;Phone Inquiry&quot;,&quot;OwnerId&quot;:&quot;0050o00000VyXBUAA3&quot;,&quot;Phone&quot;:&quot;473724327&quot;,&quot;Status&quot;:&quot;Open - Not Contacted&quot;,&quot;Title&quot;:&quot;Software Development Engineer&quot;}</sobjectValue>
+            </value>
+        </parameters>
+    </testPoints>
+    <testPoints>
+        <assertions>
+            <conditions>
+                <leftValueReference>Revenue_Less_Than_25k</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+        </assertions>
+        <assertions>
+            <conditions>
+                <leftValueReference>Revenue_Greater_Than_25k_and_Less_Than_75k</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+        </assertions>
+        <assertions>
+            <conditions>
+                <leftValueReference>Revenue_Greater_Than_75k</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+        </assertions>
+        <elementApiName>Finish</elementApiName>
+    </testPoints>
+</FlowTest>

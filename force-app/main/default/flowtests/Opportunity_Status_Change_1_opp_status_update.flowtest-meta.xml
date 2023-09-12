@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowTest xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowApiName>Opportunity_Status_Change_1</flowApiName>
+    <label>opp status update</label>
+    <testPoints>
+        <elementApiName>Start</elementApiName>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordInitial</type>
+            <value>
+                <sobjectValue>{&quot;AccountId&quot;:&quot;0010o000036OQLqAAO&quot;,&quot;Amount&quot;:10000,&quot;CloseDate&quot;:&quot;2023-06-15&quot;,&quot;DB_Competitor__c&quot;:&quot;Competitor A&quot;,&quot;ForecastCategoryName&quot;:&quot;Pipeline&quot;,&quot;IsPrivate&quot;:false,&quot;Name&quot;:&quot;Create Account 2 Opportunity&quot;,&quot;OwnerId&quot;:&quot;0050o00000VyXBUAA3&quot;,&quot;Probability&quot;:10,&quot;StageName&quot;:&quot;Prospecting&quot;}</sobjectValue>
+            </value>
+        </parameters>
+    </testPoints>
+    <testPoints>
+        <assertions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Prospecting</stringValue>
+                </rightValue>
+            </conditions>
+            <errorMessage>Stage. name is not updated to prospecting</errorMessage>
+        </assertions>
+        <elementApiName>Finish</elementApiName>
+    </testPoints>
+</FlowTest>

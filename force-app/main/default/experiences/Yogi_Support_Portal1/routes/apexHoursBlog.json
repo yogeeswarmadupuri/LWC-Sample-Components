@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "c7d52aa0-a944-48f9-ad09-01e6fdbbc033",
+  "appPageId" : "02d4ed5b-7ad5-4b38-bcd0-dac201935d75",
+  "configurationTags" : [ ],
+  "id" : "0b7b669b-8400-4450-9bdb-f6da3f800d6e",
+  "label" : "ApexHours-Blog",
+  "pageAccess" : "UseParent",
+  "routeType" : "extdetail-cms-ApexHours-Blog",
+  "type" : "route",
+  "urlPrefix" : "apexhours-blog"
+}

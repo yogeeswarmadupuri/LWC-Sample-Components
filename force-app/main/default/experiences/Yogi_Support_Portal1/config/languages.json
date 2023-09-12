@@ -1,0 +1,15 @@
+{
+  "defaultCode" : "en_US",
+  "defaultLabel" : "English (US)",
+  "id" : "4f929c01-e322-4f7e-9772-9cf60f23f1de",
+  "languages" : [ {
+    "countryCode" : "",
+    "fallbackLanguageId" : null,
+    "id" : "a728711a-6661-48e7-ac94-bdc451ebd4a8",
+    "isActive" : true,
+    "label" : "Telugu",
+    "languageCode" : "te",
+    "type" : "language"
+  } ],
+  "type" : "languageContainer"
+}

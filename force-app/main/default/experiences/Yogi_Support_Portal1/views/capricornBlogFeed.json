@@ -1,0 +1,50 @@
+{
+  "appPageId" : "02d4ed5b-7ad5-4b38-bcd0-dac201935d75",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "6f0b0762-7acb-4f82-9787-e67e8e4c6d40",
+  "label" : "Capricorn-Blog_Feed",
+  "regions" : [ {
+    "id" : "5c70fb1f-adfa-49c0-8cb3-d466094d4b19",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "cmsJsonConfig" : {
+          "cmsConnectJsonPath" : "Blog_Item",
+          "cmsConnectSettingName" : "Capricorn",
+          "componentPathUrl" : "{!recordId}",
+          "contentLayoutAttributeProviderType" : "DesignFile",
+          "contentLayoutAttributes" : {
+            "author" : "@author/name",
+            "content" : "@content",
+            "imageSrc" : "@featured_image",
+            "publishedOn" : "@date",
+            "title" : "@title"
+          },
+          "contentLayoutName" : "forceCommunity:cmsContentItemDetailLayout",
+          "dataBindingProviderAttributes" : { },
+          "dataBindingProviderComponent" : "forceCommunity:cmsConnectJSONItemDataBindingProvider",
+          "dataProviderComponent" : "forceCommunity:cmsConnectJSONDataProvider",
+          "isSelectedCmsSiteConfigDisabled" : "true"
+        }
+      },
+      "componentName" : "forceCommunity:cmsContent",
+      "id" : "e2884e19-62a8-4f7e-a189-496340434b48",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b646d143-11d8-43ac-9c5f-730c5211e647",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "b9871792-2bd1-4bf6-af86-85240ea25872",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "extdetail-cms-Capricorn-Blog_Feed"
+}

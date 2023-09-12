@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "2f676a01-06c9-4204-8ae4-c87530cc077c",
+    "propertyOverrides" : {
+      "activeViewId" : "6ecc2942-8258-467e-8345-ee2e7b1b7574"
+    },
+    "targetId" : "d0f8f430-eba1-4b13-bf99-41c80cffdc53",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Chicago_Home_Page_Page",
+  "id" : "7aa7fbfd-50c9-4144-9ba9-3c4dff48ab18",
+  "type" : "experienceVariation"
+}

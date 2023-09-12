@@ -1,0 +1,50 @@
+{
+  "appPageId" : "02d4ed5b-7ad5-4b38-bcd0-dac201935d75",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "c7d52aa0-a944-48f9-ad09-01e6fdbbc033",
+  "label" : "ApexHours-Blog",
+  "regions" : [ {
+    "id" : "f5a1a71d-47ad-4994-a424-faed0071962c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "cmsJsonConfig" : {
+          "cmsConnectJsonPath" : "Blog_Item",
+          "cmsConnectSettingName" : "ApexHours",
+          "componentPathUrl" : "{!recordId}",
+          "contentLayoutAttributeProviderType" : "DesignFile",
+          "contentLayoutAttributes" : {
+            "author" : "@author/name",
+            "content" : "@content",
+            "imageSrc" : "@featured_image",
+            "publishedOn" : "@date",
+            "title" : "@title"
+          },
+          "contentLayoutName" : "forceCommunity:cmsContentItemDetailLayout",
+          "dataBindingProviderAttributes" : { },
+          "dataBindingProviderComponent" : "forceCommunity:cmsConnectJSONItemDataBindingProvider",
+          "dataProviderComponent" : "forceCommunity:cmsConnectJSONDataProvider",
+          "isSelectedCmsSiteConfigDisabled" : "true"
+        }
+      },
+      "componentName" : "forceCommunity:cmsContent",
+      "id" : "e189d0cd-d4f4-4ad3-ad1a-31aad9fab2ad",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f3885d9f-b15d-4efc-ae62-d7a2156c0a1d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "40636ea6-41cf-4414-b0bf-21d1ed4ecec7",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "extdetail-cms-ApexHours-Blog"
+}

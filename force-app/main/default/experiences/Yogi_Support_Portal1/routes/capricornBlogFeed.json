@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "6f0b0762-7acb-4f82-9787-e67e8e4c6d40",
+  "appPageId" : "02d4ed5b-7ad5-4b38-bcd0-dac201935d75",
+  "configurationTags" : [ ],
+  "id" : "2fb0c7be-ab51-4ef0-8ebd-86274226e62f",
+  "label" : "Capricorn-Blog_Feed",
+  "pageAccess" : "UseParent",
+  "routeType" : "extdetail-cms-Capricorn-Blog_Feed",
+  "type" : "route",
+  "urlPrefix" : "capricorn-blog-feed"
+}

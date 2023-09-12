@@ -1,0 +1,92 @@
+{
+  "appPageId" : "02d4ed5b-7ad5-4b38-bcd0-dac201935d75",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "638ad2e2-e310-4540-8f2a-7ff27952e44b",
+  "label" : "BlogData",
+  "regions" : [ {
+    "id" : "1c920552-cda5-45bc-a2b7-3dc52a3228e3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "cmsJsonConfig" : {
+          "cmsConnectJsonPath" : "Blog_List",
+          "cmsConnectSettingName" : "Capricorn",
+          "componentPathUrl" : "",
+          "contentCollectionLayoutAttributes" : {
+            "itemsPerPage" : "6",
+            "largeDeviceSize" : "3"
+          },
+          "contentCollectionLayoutName" : "forceCommunity:cmsContentGridLayout",
+          "contentLayoutAttributeProviderType" : "DesignFile",
+          "contentLayoutAttributes" : {
+            "author" : "@author/name",
+            "content" : "@content",
+            "imageSrc" : "@featured_image",
+            "navLink" : {
+              "externalURL" : "http://",
+              "linkLabel" : "Read More",
+              "navigationType" : "Community_Standard_Page",
+              "pageName" : "Capricorn-Blog_Feed",
+              "queryParamList" : [ {
+                "paramName" : "recordId",
+                "paramValue" : "@ID"
+              }, {
+                "paramName" : "cmsSourceName",
+                "paramValue" : "Capricorn"
+              }, {
+                "paramName" : "cmsTypeName",
+                "paramValue" : "Blog_Feed"
+              }, {
+                "paramName" : "recordName",
+                "paramValue" : "@title"
+              } ],
+              "routeType" : "extdetail-cms-Capricorn-Blog_Feed"
+            },
+            "publishedOn" : "@date",
+            "title" : "@title"
+          },
+          "contentLayoutName" : "forceCommunity:cmsContentCardLayout",
+          "dataBindingProviderAttributes" : {
+            "collectionStartNode" : "@posts"
+          },
+          "dataBindingProviderComponent" : "forceCommunity:cmsConnectJSONCollectionDataBindingProvider",
+          "dataProviderComponent" : "forceCommunity:cmsConnectJSONDataProvider",
+          "isSelectedCmsSiteConfigDisabled" : ""
+        }
+      },
+      "componentName" : "forceCommunity:cmsContent",
+      "id" : "a9a50158-4d7f-4e62-9e61-5f78acf04991",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0e7c90bd-ecf7-441a-8352-58363467a6ae",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "5a5b2891-1070-47a3-9f08-eda7cb97bc34",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "BlogData"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cba8fa74-cbf2-4459-af6f-9ecbcae28ff3",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b9b2863c-2d01-4fe2-837f-29a7cc1dd5e7",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-blogdata"
+}

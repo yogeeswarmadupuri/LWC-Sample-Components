@@ -1,0 +1,65 @@
+{
+  "appPageId" : "27dabfe3-573b-45f0-8d49-7923c7a6995c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "4ca03515-2ac2-4900-9ae3-225523d8f658",
+  "label" : "Case Detail",
+  "regions" : [ {
+    "id" : "149d2ea9-e368-415c-a397-26fc0da8d545",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "17b79c84-102b-4938-bc78-00c6c1daff83",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "tab1Type" : "details",
+        "tab2Type" : "related",
+        "tab3Type" : "chatter",
+        "tab4Type" : "none",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "aee7effd-fac4-45b4-9115-56fbbd6e874c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3caa7d4b-5876-4a1f-9772-04c081cd6c69",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "17cb75eb-c009-4c56-85fe-5dd09cecda44",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f7575b01-8d63-4d07-80ad-13eb94bb125c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c202874d-eae9-4ebe-8fa2-7fbf16abfe9b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-500"
+}

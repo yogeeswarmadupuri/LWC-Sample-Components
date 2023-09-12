@@ -1,0 +1,18 @@
+{
+  "forgotPasswordRouteId" : "9265efd8-09ad-4b8a-8164-4b8acb1c60ae",
+  "isAvailableToGuests" : true,
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "32195de0-02c0-4aaa-8c45-87faeebb72f6",
+  "mainAppPageId" : "02d4ed5b-7ad5-4b38-bcd0-dac201935d75",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "9e91a124-9dc8-47a3-a8b0-05aca7ea2e93",
+  "trustedSitesForScript" : [ {
+    "id" : "3bde63ea-cf09-4cf2-9a43-bc0c040f3ab7",
+    "isActive" : true,
+    "trustedSiteName" : "ApexHours",
+    "trustedSiteUrl" : "https://public-api.wordpress.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

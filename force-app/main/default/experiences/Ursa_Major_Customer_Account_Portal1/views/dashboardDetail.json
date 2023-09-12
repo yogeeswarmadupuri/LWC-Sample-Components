@@ -1,0 +1,49 @@
+{
+  "appPageId" : "6fff0007-af44-47b0-aa4b-f88a44b51d52",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "71745ff9-7f99-434d-a390-1c058c9ce1d4",
+  "label" : "Dashboard Detail",
+  "regions" : [ {
+    "id" : "37e06c8e-528b-41d3-9931-55699abfa437",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "1065",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:dashboard",
+      "id" : "a438453b-81c4-4431-8008-6dc104f2ed62",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ac90e2f3-28bf-4e3a-a339-2d681b3c5491",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "14abc3dd-08da-4d54-a6a7-691a8838c40d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "fb8d4295-4a80-463f-96ea-317f7194d807",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d9f9a3ed-8fa8-4d55-ac87-e1d8e64bfde3",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-01Z"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "bc4aee9a-cd27-4659-bdcd-88363813d4e4",
+  "appPageId" : "fa9f133b-a7e3-4ff0-8606-7111b0651063",
+  "configurationTags" : [ ],
+  "id" : "68518c92-c346-431a-8efa-5a71943b5193",
+  "label" : "FlexiblePageDesign",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-flexiblepagedesign",
+  "type" : "route",
+  "urlPrefix" : "flexiblepagedesign"
+}

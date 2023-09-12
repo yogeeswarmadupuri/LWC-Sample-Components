@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "76441737-5384-4fad-8914-6adbe5b91445",
+    "propertyOverrides" : {
+      "activeBrandingSetId" : "1bc0626b-9d89-48a1-bd49-8693833e29f1"
+    },
+    "targetId" : "5313e06d-3eb2-4f4f-a2ff-1e42caec9e79",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Customer_Account_Portal_Chicago_Branding_Set_Branding",
+  "id" : "c65934cb-e363-4972-9b09-a11bb9a11e60",
+  "type" : "experienceVariation"
+}

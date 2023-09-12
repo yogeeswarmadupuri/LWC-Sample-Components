@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <quickActions>
+        <label></label>
+        <name>Create_Opportunity_Record</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Create_Quick_Contact</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Personal_Account</name>
+    </recordTypes>
+    <webLinks>
+        <label></label>
+        <name>Billing</name>
+    </webLinks>
+</CustomObjectTranslation>

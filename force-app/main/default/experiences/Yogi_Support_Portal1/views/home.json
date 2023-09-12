@@ -1,0 +1,214 @@
+{
+  "appPageId" : "02d4ed5b-7ad5-4b38-bcd0-dac201935d75",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "b09d187c-de02-4ec2-a2a3-c35a6d03648e",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"text-align: center;\"><b style=\"color: rgb(30, 36, 67); font-size: 28px;\">Welcome!</b></h1><p style=\"text-align: center;\"><span style=\"font-size: 20px;\">Work on leads, register deals, and track progress with analytics.</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "2e232456-e151-4b45-9e86-689083249e07",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "08a833eb-6a2c-4cac-b6bf-888b6d7d7592",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><img src=\"/sfsites/c/img/community/prm/prm-default-banner.png\" alt=\"Banner image for Partner Central template\"></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "973f556c-8d19-47d6-9e20-4c19453c1278",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "fd7a02fe-9eff-48c2-8bd6-18ebd47773c1",
+          "activeTab" : "tab1",
+          "tabs" : [ {
+            "UUID" : "3440dbde-6ccf-4baa-b160-155869c5474c",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "forceCommunity:dashboard"
+            } ],
+            "tabKey" : "tab1",
+            "tabName" : "Business Summary"
+          }, {
+            "UUID" : "a16bec52-603d-4713-9219-f9ab60db5704",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "type" : "Home"
+              },
+              "fqn" : "forceCommunity:forceCommunityFeed"
+            } ],
+            "tabKey" : "tab2",
+            "tabName" : "News & Updates"
+          }, {
+            "UUID" : "875300d6-f423-4ac2-ae30-b4d6dfa0d98d",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "a9812",
+            "tabName" : "Feed"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "fd7a02fe-9eff-48c2-8bd6-18ebd47773c1",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "485",
+            "recordId" : "01Z0o0000010BAQEA2"
+          },
+          "componentName" : "forceCommunity:dashboard",
+          "id" : "c389eb2c-8f44-4b62-ad3e-f979b90795c3",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3440dbde-6ccf-4baa-b160-155869c5474c",
+        "regionLabel" : "Business Summary",
+        "regionName" : "tab1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "a16bec52-603d-4713-9219-f9ab60db5704",
+        "regionLabel" : "News & Updates",
+        "regionName" : "tab2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "875300d6-f423-4ac2-ae30-b4d6dfa0d98d",
+        "regionLabel" : "Feed",
+        "regionName" : "a9812",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "19d576fc-14f7-4052-9001-739b3d949472",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : true,
+          "name" : "NewLead"
+        }, {
+          "isPublic" : true,
+          "name" : "NewOpportunity"
+        }, {
+          "isPublic" : true,
+          "name" : "NewTask"
+        }, {
+          "isPublic" : true,
+          "name" : "NewCase"
+        } ],
+        "label" : "Quick Create"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "3d528570-7595-43ee-bdf4-24a24d2aca71",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "listViewIdForNavigation" : "AllOpenLeads",
+        "navigateToListView" : true,
+        "pageSize" : 5,
+        "sortBy" : "CreatedDate",
+        "title" : "Lead Inbox"
+      },
+      "componentName" : "forceCommunity:leadInbox",
+      "id" : "e822ec3b-af37-4629-8b25-41a9556a8586",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "MyOpportunities",
+        "layout" : "COMPACT",
+        "pageSize" : 5,
+        "scope" : "Opportunity",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "e5a04ec6-0390-45ce-9ca0-49765e73d2a1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "OPEN",
+        "layout" : "COMPACT",
+        "pageSize" : 5,
+        "scope" : "Task",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "3bda49b5-cd85-4cb6-a258-3bfe9d582bef",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3829a41e-af20-46b7-a894-e3b46791b556",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "4a509114-b7e5-4c9d-8cd8-2dee634ff4d0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "092417d6-3fe7-4b28-b4d6-7fbb37792a1c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1a543846-b03c-495f-a6c9-de97a166766d",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_is_Mad_if_event_Type_inperson</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( Event_Type__c ,&quot;In-Person&quot;), ISBLANK( Location__c )  )</errorConditionFormula>
+    <errorDisplayField>Location__c</errorDisplayField>
+    <errorMessage>Location is Mandatory when Event Type value is In-Person</errorMessage>
+</ValidationRule>
